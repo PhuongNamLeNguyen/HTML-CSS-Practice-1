@@ -99,7 +99,7 @@ a {
 
 /* Responsive */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .project-1 {
         margin-top: 200px;
@@ -120,6 +120,7 @@ a {
         border-top-right-radius: 8px;
     }
     .section.background-3 {
+        border-top-right-radius: 0;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
