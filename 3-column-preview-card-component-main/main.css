@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --background-1: hsl(31, 77%, 52%);
+    --background-2: hsl(184, 100%, 22%);
+    --background-3: hsl(179, 100%, 13%);
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+
+}
+
+.project-1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-1 .main {
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    max-width: 240px;
+    padding: 40px;
+}
+
+.section img {
+    width: 3.5em;
+}
+
+h2 {
+    padding: 25px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+}
+
+.section.background-1 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: var(--background-1);
+}
+.section.background-2 {
+    background-color: var(--background-2);
+}
+.section.background-3 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--background-3);
+}
+
+.section.background-1 a {
+    color: var(--background-1);
+}
+
+.section.background-2 a {
+    color: var(--background-2);
+}
+
+.section.background-3 a {
+    color: var(--background-3);
+}
+
+.section p {
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    transition: .25s linear;
+
+}
+
+.section a:hover {
+    background-color: hsla(0, 0%, 89%, 0.856);
+    transition: .25s linear;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 375px) {
+
+    .project-1 {
+        margin-top: 200px;
+    }
+    .project-1 .main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section {
+        max-width: 300px;
+        padding: 40px;
+    }
+
+    .section.background-1 {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .section.background-3 {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .section a {
+        padding-top: -100px;
+    }
+}
