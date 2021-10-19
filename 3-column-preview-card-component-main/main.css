@@ -118,6 +118,8 @@ a {
     .section.background-1 {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 0;
     }
     .section.background-3 {
         border-top-right-radius: 0;
